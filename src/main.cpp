@@ -104,7 +104,7 @@ void setup(void)
   tft.pushImage(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, bootlogo);
 
   SPEAKER().playMusic(startup_music, 25000);
-  
+
 }
 
 void hitBatSound()
@@ -236,6 +236,7 @@ void loop()
       // Hit player bat
       ys = ys * -1;
       xs = amount[random(4)] * vrije[random(2)];
+      
       hitBatSound();
     }
 
